@@ -1,0 +1,74 @@
+You are tasked with creating a React-based web application for an AI Dating Coach tool. The application should be a CRM-style dashboard with specific features and functionalities. Follow these instructions carefully to complete the task:
+
+First, review the project requirements:
+
+<project_requirements>
+{{PROJECT_REQUIREMENTS}}
+</project_requirements>
+
+Now, follow these steps to create the web application:
+
+1. Set up the React project:
+   a. Create a new React project using Create React App or your preferred method
+   b. Install necessary dependencies, including Tailwind CSS and react-beautiful-dnd (if implementing drag-and-drop)
+
+2. Create the main components:
+   a. App component (main container)
+   b. Navigation component (top navigation bar)
+   c. Dashboard component (contains the lead stages and cards)
+   d. LeadCard component (individual lead cards)
+   e. SidePanel or Modal component (for detailed AI prompts)
+
+3. Implement the Dashboard layout:
+   a. Create four columns representing the lead stages: Lust, Labor, Loyal, and DEAD (exes)
+   b. Implement the ability to drag-and-drop lead cards between columns (use react-beautiful-dnd if chosen)
+
+4. Create the LeadCard component:
+   a. Display the required information: name/nickname, current stage, last contact info, emotional ROI, and AI-suggested next move
+   b. Style the card using Tailwind CSS, ensuring it's visually appealing and easy to read
+
+5. Develop the Navigation component:
+   a. Include "Today's Emotional Check-In" button (opens a modal with 3 yes/no questions)
+   b. Add "Call Your Coach" button (triggers simulated AI call)
+   c. Include "Weekly Strategy Report" link
+
+6. Implement the SidePanel or Modal component:
+   a. Display detailed AI prompts based on the lead's current stage
+   b. Ensure it can be easily opened and closed by the user
+
+7. Create a filter/sort system:
+   a. Implement filtering by stage, last contact, and emotional ROI
+   b. Add sorting functionality for leads within each stage
+
+8. Add dummy data:
+   a. Create data for 5 leads in various stages
+   b. Ensure the data includes all required fields for each lead
+
+9. Style the application:
+   a. Use Tailwind CSS to create a minimal, visually appealing design
+   b. Ensure the layout is mobile-responsive
+
+10. Implement optional bonus features (if time allows):
+    a. Use react-beautiful-dnd for smooth drag-and-drop functionality
+    b. Add placeholders for WhatsApp sync API and AI call simulation
+
+11. Test the application:
+    a. Ensure all features are working as expected
+    b. Test responsiveness on various screen sizes
+    c. Verify that the dummy data is displayed correctly
+
+12. Optimize and refactor:
+    a. Review your code for any potential improvements
+    b. Ensure proper component organization and code structure
+
+When you have completed the task, provide your response in the following format:
+
+<answer>
+1. Brief overview of the completed application
+2. List of implemented features
+3. Any challenges faced and how they were overcome
+4. Suggestions for future improvements or expansions
+5. GitHub repository link (if applicable)
+</answer>
+
+Remember to focus on creating a user-friendly, visually appealing, and functional web application that meets all the specified requirements. Good luck!
