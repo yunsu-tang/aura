@@ -12,7 +12,7 @@ export function Navigation({ onCoachCall }: NavigationProps) {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-gray-900">AI Dating Coach</h1>
+              <h1 className="text-xl font-bold text-gray-900">Aura</h1>
             </div>
           </div>
           
