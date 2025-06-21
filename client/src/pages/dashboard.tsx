@@ -13,9 +13,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Button } from "@/components/ui/button";
 
 const STAGES = [
-  { id: 'lust', name: 'Lust', icon: Flame, color: 'from-red-500 to-pink-500' },
-  { id: 'labor', name: 'Labor', icon: Hammer, color: 'from-yellow-500 to-orange-500' },
   { id: 'loyal', name: 'Loyal', icon: Heart, color: 'from-green-500 to-emerald-500' },
+  { id: 'labor', name: 'Labor', icon: Hammer, color: 'from-yellow-500 to-orange-500' },
+  { id: 'lust', name: 'Lust', icon: Flame, color: 'from-red-500 to-pink-500' },
   { id: 'dead', name: 'DEAD (Exes)', icon: Skull, color: 'from-gray-600 to-gray-700' }
 ];
 
@@ -135,9 +135,9 @@ export default function Dashboard() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Stages</SelectItem>
-                <SelectItem value="lust">Lust</SelectItem>
-                <SelectItem value="labor">Labor</SelectItem>
                 <SelectItem value="loyal">Loyal</SelectItem>
+                <SelectItem value="labor">Labor</SelectItem>
+                <SelectItem value="lust">Lust</SelectItem>
                 <SelectItem value="dead">DEAD</SelectItem>
               </SelectContent>
             </Select>

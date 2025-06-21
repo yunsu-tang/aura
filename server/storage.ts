@@ -115,7 +115,7 @@ export class MemStorage implements IStorage {
   async getAllLeads(): Promise<Lead[]> {
     return Array.from(this.leads.values()).sort((a, b) => {
       if (a.stage !== b.stage) {
-        const stageOrder = ['lust', 'labor', 'loyal', 'dead'];
+        const stageOrder = ['loyal', 'labor', 'lust', 'dead'];
         return stageOrder.indexOf(a.stage) - stageOrder.indexOf(b.stage);
       }
       return a.position - b.position;
