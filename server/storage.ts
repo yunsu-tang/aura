@@ -48,7 +48,8 @@ export class MemStorage implements IStorage {
         lastMessage: "Hey, feel free to join the run anytime. I've decided to move on - I think you were right that we're not a match. Enjoy your trip!",
         emotionalROI: 45,
         aiSuggestion: "Consider moving to DEAD stage - conversation indicates mutual decision to end romantic pursuit.",
-        position: 0
+        position: 0,
+        profilePhoto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
       },
       {
         name: "Ed",
@@ -57,7 +58,8 @@ export class MemStorage implements IStorage {
         lastMessage: "Thanks for the movie recommendation!",
         emotionalROI: 35,
         aiSuggestion: "Create anticipation - suggest watching it together this weekend.",
-        position: 1
+        position: 1,
+        profilePhoto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
       },
       {
         name: "Felix",
@@ -66,7 +68,8 @@ export class MemStorage implements IStorage {
         lastMessage: "I've been really busy with work lately",
         emotionalROI: 58,
         aiSuggestion: "Focus on building trust. Send thoughtful messages without expecting immediate responses.",
-        position: 0
+        position: 0,
+        profilePhoto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
       },
       {
         name: "James",
@@ -75,7 +78,8 @@ export class MemStorage implements IStorage {
         lastMessage: "Can't wait to see you this weekend!",
         emotionalROI: 92,
         aiSuggestion: "Plan meaningful experiences together. Focus on deepening emotional connection.",
-        position: 0
+        position: 0,
+        profilePhoto: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
       },
       {
         name: "Tim",
@@ -84,7 +88,8 @@ export class MemStorage implements IStorage {
         lastMessage: "I think we should just be friends",
         emotionalROI: 0,
         aiSuggestion: "Focus energy on active leads. Archive for learning purposes.",
-        position: 0
+        position: 0,
+        profilePhoto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
       }
     ];
 

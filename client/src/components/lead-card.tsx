@@ -29,15 +29,34 @@ export function LeadCard({ lead, onClick, isDragging }: LeadCardProps) {
       ${isDragging ? 'shadow-lg' : ''}
       ${isDeadStage ? 'opacity-75' : ''}
     `}>
-      <div className="flex items-start justify-between mb-3">
-        <div>
-          <h4 className="font-semibold text-gray-900">{lead.name}</h4>
-          <p className="text-sm text-gray-500">
-            Last contact: {formatLastContact(lead.lastContact)}
-          </p>
+      <div className="flex items-start space-x-3 mb-3">
+        <div className="flex-shrink-0">
+          {lead.profilePhoto ? (
+            <img
+              src={lead.profilePhoto}
+              alt={lead.name}
+              className="w-12 h-12 rounded-full object-cover"
+            />
+          ) : (
+            <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center">
+              <span className="text-gray-600 font-medium text-sm">
+                {lead.name.charAt(0)}
+              </span>
+            </div>
+          )}
         </div>
-        <div className={`${getROIColor(lead.emotionalROI)} text-white px-2 py-1 rounded-full text-xs font-medium`}>
-          {lead.emotionalROI} ROI
+        <div className="flex-1 min-w-0">
+          <div className="flex items-start justify-between">
+            <div>
+              <h4 className="font-semibold text-gray-900">{lead.name}</h4>
+              <p className="text-sm text-gray-500">
+                Last contact: {formatLastContact(lead.lastContact)}
+              </p>
+            </div>
+            <div className={`${getROIColor(lead.emotionalROI)} text-white px-2 py-1 rounded-full text-xs font-medium flex-shrink-0`}>
+              {lead.emotionalROI} ROI
+            </div>
+          </div>
         </div>
       </div>
       

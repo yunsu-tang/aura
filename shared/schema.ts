@@ -11,6 +11,7 @@ export const leads = pgTable("leads", {
   emotionalROI: integer("emotional_roi").notNull(), // 0-100
   aiSuggestion: text("ai_suggestion"),
   position: integer("position").notNull(), // for drag-and-drop ordering
+  profilePhoto: text("profile_photo"), // URL or path to profile photo
 });
 
 export const emotionalCheckins = pgTable("emotional_checkins", {
