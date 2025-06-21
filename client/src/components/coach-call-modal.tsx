@@ -21,7 +21,7 @@ export function CoachCallModal({ isOpen, onClose }: CoachCallModalProps) {
           <div className="bg-gray-50 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-700 mb-2"><strong>Today's Focus:</strong></p>
             <p className="text-sm text-gray-600">
-              Strategies for advancing your leads to the next stage while maintaining momentum with existing connections.
+              How to read his signals, when to pull back vs. lean in, and building genuine connection without chasing.
             </p>
           </div>
           

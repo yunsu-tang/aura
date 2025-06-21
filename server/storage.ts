@@ -47,7 +47,7 @@ export class MemStorage implements IStorage {
         lastContact: new Date("2025-06-05T23:17:51"),
         lastMessage: "Hey, feel free to join the run anytime. I've decided to move on - I think you were right that we're not a match. Enjoy your trip!",
         emotionalROI: 45,
-        aiSuggestion: "Consider moving to DEAD stage - conversation indicates mutual decision to end romantic pursuit.",
+        aiSuggestion: "He's clearly pulling away after canceling plans. Time to move on - you deserve someone who's excited to see you.",
         position: 0,
         profilePhoto: "/attached_assets/John_1750508324678.png"
       },
@@ -57,7 +57,7 @@ export class MemStorage implements IStorage {
         lastContact: new Date(Date.now() - 4 * 60 * 60 * 1000),
         lastMessage: "Thanks for the movie recommendation!",
         emotionalROI: 35,
-        aiSuggestion: "Create anticipation - suggest watching it together this weekend.",
+        aiSuggestion: "He's showing interest but being casual. Mirror his energy - be friendly but don't chase. Let him initiate the next move.",
         position: 1,
         profilePhoto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
       },
@@ -67,7 +67,7 @@ export class MemStorage implements IStorage {
         lastContact: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000),
         lastMessage: "I've been really busy with work lately",
         emotionalROI: 58,
-        aiSuggestion: "Focus on building trust. Send thoughtful messages without expecting immediate responses.",
+        aiSuggestion: "He's in his career-focused phase. Give him space but stay warm. Send supportive messages about his work without pressure.",
         position: 0,
         profilePhoto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
       },
@@ -77,7 +77,7 @@ export class MemStorage implements IStorage {
         lastContact: new Date(Date.now() - 24 * 60 * 60 * 1000),
         lastMessage: "Can't wait to see you this weekend!",
         emotionalROI: 92,
-        aiSuggestion: "Plan meaningful experiences together. Focus on deepening emotional connection.",
+        aiSuggestion: "He's invested and excited about you! Plan that weekend together. Now's the time to explore deeper emotional intimacy.",
         position: 0,
         profilePhoto: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
       },
@@ -87,7 +87,7 @@ export class MemStorage implements IStorage {
         lastContact: new Date(Date.now() - 90 * 24 * 60 * 60 * 1000),
         lastMessage: "I think we should just be friends",
         emotionalROI: 0,
-        aiSuggestion: "Focus energy on active leads. Archive for learning purposes.",
+        aiSuggestion: "He's made his feelings clear. Time to close this chapter and focus your energy on men who appreciate you.",
         position: 0,
         profilePhoto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=face"
       }
