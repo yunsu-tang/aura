@@ -80,7 +80,7 @@ export function LeadCard({ lead, onClick, isDragging }: LeadCardProps) {
             ${isDeadStage ? 'text-gray-600' : 'text-blue-800'}
           `}>
             <Bot className="mr-1 h-3 w-3" />
-            {isDeadStage ? 'AI Note:' : 'AI Suggestion:'}
+            {isDeadStage ? 'Note:' : 'Suggestion:'}
           </p>
           <p className={`text-sm ${isDeadStage ? 'text-gray-500' : 'text-blue-700'}`}>
             {lead.aiSuggestion}
