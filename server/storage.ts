@@ -49,7 +49,7 @@ export class MemStorage implements IStorage {
         emotionalROI: 45,
         aiSuggestion: "He's clearly pulling away after canceling plans. Time to move on - you deserve someone who's excited to see you.",
         position: 0,
-        profilePhoto: "/attached_assets/John_1750508324678.png"
+        profilePhoto: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=150&h=150&fit=crop&crop=face"
       },
       {
         name: "Ed",
