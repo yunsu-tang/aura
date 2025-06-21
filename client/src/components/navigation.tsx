@@ -32,8 +32,8 @@ export function Navigation({ onEmotionalCheckin, onCoachCall }: NavigationProps)
               className="bg-indigo-600 hover:bg-indigo-700 text-white"
             >
               <Phone className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Call Your Coach</span>
-              <span className="sm:hidden">Coach</span>
+              <span className="hidden sm:inline">Chat with Your Coach</span>
+              <span className="sm:hidden">Chat</span>
             </Button>
             
             <Button variant="ghost" className="text-gray-600 hover:text-gray-900">
