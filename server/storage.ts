@@ -46,7 +46,7 @@ export class MemStorage implements IStorage {
         stage: "lust",
         lastContact: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
         lastMessage: "Had fun at the coffee shop!",
-        emotionalROI: 85,
+        emotionalROI: 45,
         aiSuggestion: "Send a flirty follow-up about shared interests. Ask about weekend plans.",
         position: 0
       },
@@ -55,7 +55,7 @@ export class MemStorage implements IStorage {
         stage: "lust",
         lastContact: new Date(Date.now() - 4 * 60 * 60 * 1000),
         lastMessage: "Thanks for the movie recommendation!",
-        emotionalROI: 62,
+        emotionalROI: 35,
         aiSuggestion: "Create anticipation - suggest watching it together this weekend.",
         position: 1
       },
