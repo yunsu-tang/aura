@@ -49,7 +49,7 @@ export class MemStorage implements IStorage {
         emotionalROI: 45,
         aiSuggestion: "Consider moving to DEAD stage - conversation indicates mutual decision to end romantic pursuit.",
         position: 0,
-        profilePhoto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+        profilePhoto: "/attached_assets/John_1750508324678.png"
       },
       {
         name: "Ed",
