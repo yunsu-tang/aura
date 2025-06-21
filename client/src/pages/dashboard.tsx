@@ -3,7 +3,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { DragDropContext, Droppable, Draggable, DropResult } from "react-beautiful-dnd";
 import { Navigation } from "@/components/navigation";
 import { LeadCard } from "@/components/lead-card";
-import { EmotionalCheckinModal } from "@/components/emotional-checkin-modal";
+
 import { CoachCallModal } from "@/components/coach-call-modal";
 import { AiDetailModal } from "@/components/ai-detail-modal";
 import { apiRequest } from "@/lib/queryClient";
@@ -21,7 +21,6 @@ const STAGES = [
 
 export default function Dashboard() {
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
-  const [showEmotionalModal, setShowEmotionalModal] = useState(false);
   const [showCoachModal, setShowCoachModal] = useState(false);
   const [showAiModal, setShowAiModal] = useState(false);
   const [filterStage, setFilterStage] = useState<string>("all");
@@ -97,7 +96,6 @@ export default function Dashboard() {
     return (
       <div className="min-h-screen bg-gray-50">
         <Navigation 
-          onEmotionalCheckin={() => setShowEmotionalModal(true)}
           onCoachCall={() => setShowCoachModal(true)}
         />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -117,7 +115,6 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation 
-        onEmotionalCheckin={() => setShowEmotionalModal(true)}
         onCoachCall={() => setShowCoachModal(true)}
       />
       
@@ -226,11 +223,6 @@ export default function Dashboard() {
       </div>
 
       {/* Modals */}
-      <EmotionalCheckinModal 
-        isOpen={showEmotionalModal} 
-        onClose={() => setShowEmotionalModal(false)} 
-      />
-      
       <CoachCallModal 
         isOpen={showCoachModal} 
         onClose={() => setShowCoachModal(false)} 

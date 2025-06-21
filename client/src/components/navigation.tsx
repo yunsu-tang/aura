@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Phone, BarChart3, User } from "lucide-react";
+import { Phone, BarChart3, User } from "lucide-react";
 
 interface NavigationProps {
-  onEmotionalCheckin: () => void;
   onCoachCall: () => void;
 }
 
-export function Navigation({ onEmotionalCheckin, onCoachCall }: NavigationProps) {
+export function Navigation({ onCoachCall }: NavigationProps) {
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,15 +17,6 @@ export function Navigation({ onEmotionalCheckin, onCoachCall }: NavigationProps)
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button
-              onClick={onEmotionalCheckin}
-              className="bg-pink-500 hover:bg-pink-600 text-white"
-            >
-              <Heart className="mr-2 h-4 w-4" />
-              <span className="hidden sm:inline">Today's Emotional Check-In</span>
-              <span className="sm:hidden">Check-In</span>
-            </Button>
-            
             <Button
               onClick={onCoachCall}
               className="bg-indigo-600 hover:bg-indigo-700 text-white"
