@@ -42,7 +42,7 @@ export class MemStorage implements IStorage {
   private initializeSampleData() {
     const sampleLeads: InsertLead[] = [
       {
-        name: "Sarah M.",
+        name: "John",
         stage: "lust",
         lastContact: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
         lastMessage: "Had fun at the coffee shop!",
