@@ -78,7 +78,7 @@ export class MemStorage implements IStorage {
         position: 0
       },
       {
-        name: "Rachel S.",
+        name: "Tim",
         stage: "dead",
         lastContact: new Date(Date.now() - 90 * 24 * 60 * 60 * 1000),
         lastMessage: "I think we should just be friends",
