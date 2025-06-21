@@ -44,10 +44,10 @@ export class MemStorage implements IStorage {
       {
         name: "John",
         stage: "lust",
-        lastContact: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
-        lastMessage: "Had fun at the coffee shop!",
+        lastContact: new Date("2025-06-05T23:17:51"),
+        lastMessage: "Hey, feel free to join the run anytime. I've decided to move on - I think you were right that we're not a match. Enjoy your trip!",
         emotionalROI: 45,
-        aiSuggestion: "Send a flirty follow-up about shared interests. Ask about weekend plans.",
+        aiSuggestion: "Consider moving to DEAD stage - conversation indicates mutual decision to end romantic pursuit.",
         position: 0
       },
       {
