@@ -5,7 +5,6 @@ import { Navigation } from "@/components/navigation";
 import { LeadCard } from "@/components/lead-card";
 
 import { CoachCallModal } from "@/components/coach-call-modal";
-import { AiDetailModal } from "@/components/ai-detail-modal";
 import { apiRequest } from "@/lib/queryClient";
 import { Lead } from "@shared/schema";
 import { Filter, Heart, Hammer, Skull, Flame } from "lucide-react";
@@ -20,9 +19,7 @@ const STAGES = [
 ];
 
 export default function Dashboard() {
-  const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
   const [showCoachModal, setShowCoachModal] = useState(false);
-  const [showAiModal, setShowAiModal] = useState(false);
   const [filterStage, setFilterStage] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("roi");
 
@@ -57,10 +54,7 @@ export default function Dashboard() {
     }
   };
 
-  const handleLeadClick = (lead: Lead) => {
-    setSelectedLead(lead);
-    setShowAiModal(true);
-  };
+
 
   const getFilteredAndSortedLeads = () => {
     let filteredLeads = leads;
@@ -204,7 +198,7 @@ export default function Dashboard() {
                               >
                                 <LeadCard
                                   lead={lead}
-                                  onClick={() => handleLeadClick(lead)}
+                                  onClick={() => {}}
                                   isDragging={snapshot.isDragging}
                                 />
                               </div>
@@ -228,13 +222,7 @@ export default function Dashboard() {
         onClose={() => setShowCoachModal(false)} 
       />
       
-      {selectedLead && (
-        <AiDetailModal 
-          isOpen={showAiModal} 
-          onClose={() => setShowAiModal(false)}
-          lead={selectedLead}
-        />
-      )}
+
     </div>
   );
 }

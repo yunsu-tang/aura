@@ -88,14 +88,7 @@ export function LeadCard({ lead, onClick, isDragging }: LeadCardProps) {
         </div>
       )}
       
-      <Button
-        onClick={onClick}
-        className="w-full"
-        variant={isDeadStage ? "secondary" : "default"}
-        disabled={isDeadStage}
-      >
-        {isDeadStage ? 'Archived' : 'View AI Prompts'}
-      </Button>
+
     </div>
   );
 }
